@@ -101,6 +101,32 @@ main a:link, main a:visited {
 	text-decoration: none;
 	color: #039be5;
 }
+section {
+	width: calc(100% - 450px);
+	display: inline-block;
+	vertical-align:top;
+}
+article {
+	width: 49.7%;
+	display: inline-block;
+	vertical-align:top;
+}
+article>a>img {
+	width: 100%;
+}
+article>a:link, article>a:visited {
+	text-decoration: none;
+	color: #000;
+}
+article>a>span.more, article>a>span.more {
+	text-decoration: none;
+	color: #039be5;
+}
+aside{
+	width: 400px;
+	display: inline-block;
+	vertical-align:top;
+}
 
 /* Footer */
 footer {
