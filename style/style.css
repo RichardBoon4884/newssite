@@ -1,0 +1,161 @@
+/* CSS style sheet for newsportal */
+
+/* Fonts */
+@font-face {
+	font-family: Roboto-Thin;
+	src: url(/fonts/Roboto-Thin.ttf);
+}
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: Roboto-Light;
+	src: url(/fonts/Roboto-Light.ttf);
+}
+@font-face {
+	font-family: Droid-Sans;
+	src: url(/fonts/DroidSansMono.ttf);
+}
+
+/* Global */
+body {
+	margin: 0;
+}
+
+/* Header */
+header {
+	position: relative;
+	background: url("img/header3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 310px;
+}
+header>h1 {
+	color: #000;
+	position: absolute;
+	left: 90px;
+	top: 15px;
+	display:inline-flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 15px 5px;
+	font-family: Roboto-Thin;
+	text-decoration: none;
+	font-size: 40px;
+}
+/* Header navigator bar */
+header>nav {
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	font-family: Roboto-Thin;
+}
+header>nav>p {
+	position: absolute;
+	left: 15%;
+	display:inline-flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 14.1px 10px;
+}
+header>nav>ul {
+	position: absolute;
+	right: 15%;
+	display:inline-flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+header>nav>ul>li {
+	padding: 14.1px 10px;
+}
+/* W.I.P
+header>nav>ul>li::after { 
+    content: " ▾";
+}*/
+header>nav>ul>li:hover {
+	background-color: rgba(0, 0, 0, 0.99);
+	cursor:pointer;
+}
+header>nav>ul>a:link, header>nav>ul>a:visited{
+	color: #fff;
+	padding: 14.1px 10px;
+	text-decoration: none;
+}
+header>nav>ul>a:hover{
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.99);
+}
+
+/* Main page */
+main {
+	width: 70%;
+	margin: auto;
+	font-family: Roboto-Light;
+}
+main a:link, main a:visited {
+	text-decoration: none;
+	color: #039be5;
+}
+
+/* Footer */
+footer {
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	font-family: Roboto-Thin;
+	position: relative;
+}
+footer>p {
+	position: absolute;
+	left: 15%;
+	margin: auto;
+	padding: 14.1px 5px;
+	font-family: Roboto-Thin;
+}
+/* Footer navigator section */
+footer>nav {
+	bottom: 0;
+	height: 50px;
+	left: 15%
+	color: #fff;
+	font-family: Roboto-Thin;
+}
+footer>nav>p {
+	position: absolute;
+	left: 15%;
+	display:inline-flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 14.1px 10px;
+}
+footer>nav>ul {
+	position: absolute;
+	right: 15%;
+	display:inline-flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+footer>nav>ul>li {
+	padding: 14.1px 10px;
+}
+footer>nav>ul>li:hover {
+	background-color: rgba(0, 0, 0, 0.99);
+	cursor:pointer;
+}
+footer>nav>ul>a:link, footer>nav>ul>a:visited{
+	color: #fff;
+	padding: 14.1px 10px;
+	text-decoration: none;
+}
+footer>nav>ul>a:hover{
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.99);
+}
