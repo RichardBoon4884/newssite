@@ -102,23 +102,24 @@ main a:link, main a:visited {
 	color: #039be5;
 }
 section {
-	width: calc(100% - 450px);
+	width: calc(100% - 405px);
 	display: inline-block;
 	vertical-align:top;
 }
-section#index>article {
-	width: 49.7%;
+section#newsIndex>article {
+	width: calc(50% - 22px);
 	display: inline-block;
 	vertical-align:top;
+	margin: 0 10px;
 }
-section#index>article>a>img {
+section#newsIndex>article>a>img {
 	width: 100%;
 }
-section#index>article>a:link, article>a:visited {
+section#newsIndex>article>a:link, article>a:visited {
 	text-decoration: none;
 	color: #000;
 }
-section#index>article>a>span.more, article>a>span.more {
+section#newsIndex>article>a>span.more, article>a>span.more {
 	text-decoration: none;
 	color: #039be5;
 }
@@ -187,4 +188,72 @@ footer>nav>ul>a:link, footer>nav>ul>a:visited{
 footer>nav>ul>a:hover{
 	text-decoration: none;
 	background-color: rgba(0, 0, 0, 0.99);
+}
+
+@media screen and (max-width: 1500px) and (min-width: 800px) {
+	header {
+		background: url("img/header3.jpg");
+		background-repeat: no-repeat;
+	}
+	main {
+		width: 90%;
+	}
+	section#newsIndex {
+	  width: calc(100%);
+		display: block;
+		vertical-align:top;
+	}
+	aside{
+    width: 400px;
+    display: inline-block;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header {
+		background: url("img/header3.jpg");
+		background-repeat: no-repeat;
+		height: 200px;
+	}
+	header>a>h1 {
+		position: unset;
+		margin: 0 auto;
+		text-align: center;
+ 	}
+	main {
+		width: 95%;
+	}
+	header>nav>p {
+		display: none;
+	}
+	header>nav>ul {
+		position: unset;
+		margin: 0 auto;
+	}
+	section#newsIndex {
+	 width: calc(100%);
+	 display: block;
+	 vertical-align:top;
+  }
+	section#newsIndex>article{
+		width: calc(100% - 20px);
+    display: block;
+	}
+	section#newsIndex>aside{
+	 width: 400px;
+	 display: inline-block;
+	}
+	section#newsPage {
+	 width: 100%;
+	 display: block;
+	 vertical-align:top;
+  }
+	section#newsPage>article{
+		width: 100%;
+    display: block;
+	}
+	section#newsPage>aside{
+	 width: 400px;
+	 display: inline-block;
+	}
 }
